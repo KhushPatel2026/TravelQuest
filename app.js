@@ -22,8 +22,7 @@ let userRouter = require("./routes/user.js")
 const port = 8080;
 const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
 
-app.set("view engine","ejs");
-app.set("views",path.join(__dirname,"views"));
+
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 app.engine("ejs",ejsMate);
